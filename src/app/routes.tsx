@@ -7,6 +7,8 @@ import { NetworkHealth } from "./pages/NetworkHealth";
 import { Notifications } from "./pages/Notifications";
 import { Profile } from "./pages/Placeholders";
 
+const basename = import.meta.env.BASE_URL;
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -21,4 +23,4 @@ export const router = createBrowserRouter([
       { path: "profile",               Component: Profile        },
     ],
   },
-]);
+], { basename });
