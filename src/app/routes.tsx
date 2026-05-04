@@ -5,6 +5,7 @@ import { WalletActivity } from "./pages/WalletActivity";
 import { TokenFlow } from "./pages/TokenFlow";
 import { NetworkHealth } from "./pages/NetworkHealth";
 import { Notifications } from "./pages/Notifications";
+import { Community } from "./pages/Community";
 import { Profile } from "./pages/Placeholders";
 
 const basename = import.meta.env.BASE_URL;
@@ -18,8 +19,9 @@ export const router = createBrowserRouter([
       { path: "wallet",                Component: WalletActivity },
       { path: "token-flow",            Component: TokenFlow      },
       { path: "network",               Component: NetworkHealth  },
-      { path: "notifications",         Component: Notifications  },
-      { path: "insights",              Component: Notifications  },
+      { path: "notifications",         Component: Community      },
+      { path: "insights",              Component: Community      },
+      { path: "community",             Component: Community      },
       { path: "profile",               Component: Profile        },
     ],
   },

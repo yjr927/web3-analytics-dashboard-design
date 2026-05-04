@@ -510,7 +510,7 @@ function InsightStrip({ onInsightClick }: { onInsightClick: () => void }) {
             onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 0 16px rgba(34,116,165,0.20)"; }}
           >
             <Sparkles style={{ width: 13, height: 13 }} className="animate-pulse" />
-            ✨ Insight
+            Insight
           </button>
         </div>
       </div>

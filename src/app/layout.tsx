@@ -23,8 +23,9 @@ const SECONDARY_NAV: Record<string, string[]> = {
   "/wallet"       : ["Active Addresses", "Transactions", "Retention", "Cohorts"],
   "/token-flow"   : ["Exchange Flows", "Whale Activity", "DEX Activity", "Cross-Chain"],
   "/network"      : ["Profitability", "Risk", "Liquidity", "Validators"],
-  "/notifications": ["Featured", "Trending", "Latest", "Bookmarked"],
-  "/insights":      ["Featured", "Trending", "Latest", "Bookmarked"],
+  "/notifications": ["All", "Community Posts", "External News"],
+  "/insights":      ["All", "Community Posts", "External News"],
+  "/community":     ["All", "Community Posts", "External News"],
 };
 
 // ── Main nav route config ─────────────────────────────────────────────────────
@@ -33,7 +34,7 @@ const MAIN_TABS = [
   { name: "Wallet Activity", path: "/wallet",        end: false },
   { name: "Token Flow",      path: "/token-flow",    end: false },
   { name: "Network Health",  path: "/network",       end: false },
-  { name: "Insights",        path: "/notifications", end: false },
+  { name: "Community",       path: "/community",     end: false },
 ];
 
 // ── Search overlay ────────────────────────────────────────────────────────────
